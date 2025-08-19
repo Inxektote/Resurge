@@ -1,0 +1,133 @@
+
+body {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    background: linear-gradient(145deg, #050810, #0b1124);
+    color: #e5e5e5;
+}
+h1, h2, h3 { 
+    color: #7dd3fc; 
+    margin: 0.5rem 0; 
+    text-shadow: 0 0 8px #60a5fa55;
+}
+p { margin: 0.3rem 0; }
+
+header {
+    background: linear-gradient(to right, #0b1124, #15223b);
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 3px solid #3b82f6;
+    box-shadow: 0 0 20px #0b1124 inset;
+}
+header h1 {
+    font-size: clamp(1.8rem, 6vw, 2.8rem);
+    color: #60a5fa;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+}
+nav a {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #0b1124, #10131f);
+    border: 2px solid #4f9de0;
+    color: #e5e5e5;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 0 6px #0ea5e9;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 14px #38bdf8;
+    border-color: #3b82f6;
+}
+
+section {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.2rem;
+}
+a.card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: linear-gradient(160deg, #0b1124, #10131f);
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 0 12px #0ea5e9aa, 0 0 8px #0ea5e955 inset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+a.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px #38bdf8cc, 0 0 12px #3b82f655 inset;
+}
+
+.ticket-grid, .ventas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.ticket-card, .venta-card {
+    background: linear-gradient(135deg, #10131f, #0b1124);
+    border-left: 4px solid #3b82f6;
+    border-radius: 16px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ticket-card:hover, .venta-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+.etiqueta-label {
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #38bdf8;
+    margin-bottom: 0.3rem;
+    text-shadow: 0 0 4px #38bdf855;
+}
+
+.etiqueta-valor {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: #e0f2fe;
+}
+.etiqueta-valor.monto {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #7dd3fc;
+}
+.etiqueta-valor.tipo {
+    font-weight: bold;
+    color: #fbbf24;
+}
+
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.85rem;
+    color: #94a3b8;
+    border-top: 2px solid #2c3a55;
+    margin-top: 2rem;
+    background: linear-gradient(135deg, #0e172a, #1e293b);
+    box-shadow: 0 0 10px #60a5fa33 inset;
+}
+
+@media (max-width: 480px) {
+    body { padding: 1rem; }
+    nav a { font-size: 0.85rem; padding: 0.4rem 0.8rem; }
+    section { grid-template-columns: 1fr; }
+}
