@@ -92,7 +92,7 @@ a.card:hover {
 
 .ticket-card, .venta-card {
     background: linear-gradient(135deg, #0b0b0b, #111111);
-    border-left: 4px solid #00bfff;
+    
     border-radius: 16px;
     padding: 1rem 1.2rem;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7), 0 0 12px #00bfff55 inset;
