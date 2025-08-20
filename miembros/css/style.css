@@ -1,33 +1,34 @@
 
+/* =================== BASE GLOBAL =================== */
 body {
     font-family: 'Cinzel', serif;
     margin: 0;
-    background: linear-gradient(145deg, #000000, #0a0a0a);
+    background: linear-gradient(145deg, #000000, #0a0f1a, #000000);
     color: #e5e5e5;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
 }
 
 /* =================== TITULOS =================== */
 h1, h2, h3 { 
-    color: #00bfff; 
+    color: #00d4ff;
     margin: 0.5rem 0; 
-    text-shadow: 0 0 10px #00bfff88, 0 0 4px #00e5ff55;
+    text-shadow: 0 0 14px #00e5ffaa, 0 0 6px #00bfff77, 0 0 20px #001a33;
+    letter-spacing: 1.5px;
 }
-
-p { margin: 0.3rem 0; }
 
 /* =================== HEADER =================== */
 header {
-    background: linear-gradient(to right, #000000, #111111);
-    padding: 2rem;
+    background: linear-gradient(120deg, #000000, #0c1624, #000000);
+    padding: 2.5rem;
     text-align: center;
     border-bottom: 3px solid #00bfff;
-    box-shadow: 0 0 20px #000000 inset, 0 0 12px #00bfff55 inset;
+    box-shadow: 0 0 25px #000 inset, 0 0 20px #00bfff55 inset;
 }
 header h1 {
-    font-size: clamp(1.8rem, 6vw, 2.8rem);
-    color: #00d4ff;
-    letter-spacing: 1px;
-    text-shadow: 0 0 14px #00e5ffaa, 0 0 6px #00bfff77;
+    font-size: clamp(2rem, 6vw, 3rem);
+    color: #64e6ff;
+    letter-spacing: 2px;
+    text-shadow: 0 0 18px #00e5ffaa, 0 0 8px #00bfff99, 0 0 26px #004466;
 }
 
 /* =================== NAV =================== */
@@ -36,32 +37,33 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 0.6rem;
+    gap: 0.8rem;
 }
 nav a {
     display: inline-block;
-    padding: 0.6rem 1rem;
-    border-radius: 12px;
-    background: linear-gradient(to bottom, #111111, #000000);
+    padding: 0.7rem 1.2rem;
+    border-radius: 14px;
+    background: linear-gradient(160deg, #111111, #000000);
     border: 2px solid #00bfff;
     color: #e5e5e5;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 0 8px #00bfff88 inset, 0 0 10px #00bfff44;
+    box-shadow: 0 0 10px #00bfff88 inset, 0 0 12px #00e5ff44, 0 0 18px #000000cc;
     transition: all 0.3s ease;
 }
 nav a:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 18px #00e5ffcc, 0 0 12px #00bfff77 inset;
-    border-color: #00e5ff;
+    transform: scale(1.07);
+    box-shadow: 0 0 20px #00e5ffcc, 0 0 14px #00bfff99 inset, 0 0 28px #001a33;
+    border-color: #64e6ff;
+    color: #ffffff;
 }
 
 /* =================== SECCIONES =================== */
 section {
-    padding: 2rem;
+    padding: 2.2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.4rem;
     border-top: 2px solid #0f172a;
 }
 
@@ -70,57 +72,57 @@ a.card {
     display: block;
     text-decoration: none;
     color: inherit;
-    background: linear-gradient(160deg, #111111, #000000);
-    padding: 1rem;
-    border-radius: 16px;
-    box-shadow: 0 0 14px #00bfff66, 0 0 8px #00e5ff55 inset;
+    background: linear-gradient(160deg, #0d0d0d, #000000);
+    padding: 1.2rem;
+    border-radius: 18px;
+    box-shadow: 0 0 16px #00bfff66, 0 0 10px #00e5ff55 inset;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 a.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #00e5ffbb, 0 0 14px #00bfff99 inset;
+    transform: scale(1.06);
+    box-shadow: 0 0 26px #00e5ffbb, 0 0 18px #00bfff99 inset;
 }
 
 /* =================== GRIDS =================== */
 .ticket-grid, .ventas-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
-    padding: 1rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.2rem;
+    padding: 1.2rem 0;
 }
 
 .ticket-card, .venta-card {
     background: linear-gradient(135deg, #0b0b0b, #111111);
-    
-    border-radius: 16px;
-    padding: 1rem 1.2rem;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7), 0 0 12px #00bfff55 inset;
+    border-radius: 18px;
+    padding: 1.2rem 1.4rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.75), 0 0 14px #00bfff55 inset;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .ticket-card:hover, .venta-card:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 22px #00e5ff77, 0 0 16px #00bfff55 inset;
+    transform: scale(1.04);
+    box-shadow: 0 0 26px #00e5ff88, 0 0 18px #00bfff66 inset;
 }
 
 /* =================== ETIQUETAS =================== */
 .etiqueta-label {
     font-weight: bold;
-    font-size: 0.95rem;
-    color: #00e5ff;
-    margin-bottom: 0.3rem;
-    text-shadow: 0 0 6px #00e5ff66;
+    font-size: 1rem;
+    color: #64e6ff;
+    margin-bottom: 0.4rem;
+    text-shadow: 0 0 8px #00e5ff66, 0 0 12px #001a33;
 }
 
 .etiqueta-valor {
-    margin: 0.2rem 0;
-    font-size: 0.9rem;
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
     color: #cbd5e1;
 }
 .etiqueta-valor.monto {
-    font-size: 1.05rem;
-    font-weight: 600;
+    font-size: 1.15rem;
+    font-weight: 700;
     color: #00e5ff;
+    text-shadow: 0 0 8px #00e5ff77;
 }
 .etiqueta-valor.tipo {
     font-weight: bold;
@@ -128,38 +130,39 @@ a.card:hover {
 }
 .etiqueta-valor.alerta {
     color: #facc15;
-    text-shadow: 0 0 6px #facc1544;
+    text-shadow: 0 0 8px #facc1544;
 }
 
 /* =================== NOTAS / TICKETS =================== */
 .ticket-note {
     background: linear-gradient(140deg, #0c0c0c, #1a1a1a);
-    padding: 1.2rem 1.5rem;
-    border-radius: 20px;
+    padding: 1.4rem 1.6rem;
+    border-radius: 22px;
     border-left: 5px solid #00bfff;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.75), 0 0 14px #00e5ff55 inset;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.8), 0 0 16px #00e5ff55 inset;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .ticket-note:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 24px #00e5ff77, 0 0 18px #00bfff66 inset;
+    transform: scale(1.03);
+    box-shadow: 0 0 28px #00e5ff99, 0 0 20px #00bfff77 inset;
 }
 
 /* =================== FOOTER =================== */
 footer {
     text-align: center;
-    padding: 1.2rem;
-    font-size: 0.85rem;
+    padding: 1.5rem;
+    font-size: 0.9rem;
     color: #94a3b8;
     border-top: 2px solid #1a1a1a;
-    margin-top: 2rem;
-    background: linear-gradient(135deg, #000000, #111111);
-    box-shadow: 0 0 12px #00bfff44 inset;
+    margin-top: 2.5rem;
+    background: linear-gradient(135deg, #000000, #0c1624, #000000);
+    box-shadow: 0 0 16px #00bfff55 inset, 0 0 22px #001a33;
 }
 
 /* =================== RESPONSIVE =================== */
 @media (max-width: 480px) {
-    body { padding: 1rem; }
-    nav a { font-size: 0.85rem; padding: 0.4rem 0.8rem; }
+    body { padding: 1.2rem; }
+    nav a { font-size: 0.85rem; padding: 0.5rem 0.9rem; }
     section { grid-template-columns: 1fr; }
 }
+
