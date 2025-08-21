@@ -5,31 +5,41 @@ body {
     margin: 0;
     background: linear-gradient(145deg, #000000, #0a0f1a, #000000);
     color: #e5e5e5;
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+    text-shadow: none; /* o rgba(0,0,0,0.2) si quieres un leve glow */
 }
 
 /* =================== TITULOS =================== */
-h1, h2, h3 { 
-    color: #00d4ff;
-    margin: 0.5rem 0; 
-    text-shadow: 0 0 14px #00e5ffaa, 0 0 6px #00bfff77, 0 0 20px #001a33;
-    letter-spacing: 1.5px;
+h1, h2, h3 {
+    color: #1E3A8A; /* Azul zafiro elegante */
+    margin: 0.5rem 0;
+    letter-spacing: 1.2px;
+    text-shadow:
+        0 0 6px rgba(30, 58, 138, 0.6),   /* halo azul zafiro */
+        0 0 12px rgba(59, 130, 246, 0.5), /* resplandor azul real */
+        0 0 20px rgba(0, 0, 0, 0.8);      /* profundidad elegante */
+    font-weight: 600;
 }
+
 
 /* =================== HEADER =================== */
 header {
     background: linear-gradient(120deg, #000000, #0c1624, #000000);
     padding: 2.5rem;
     text-align: center;
-    border-bottom: 3px solid #00bfff;
-    box-shadow: 0 0 25px #000 inset, 0 0 20px #00bfff55 inset;
+    border-bottom: 3px solid #1E3A8A; /* de cian a zafiro */
+    box-shadow: 0 0 25px #000 inset, 0 0 20px #1E3A8A55 inset;
 }
 header h1 {
-    font-size: clamp(2rem, 6vw, 3rem);
-    color: #64e6ff;
+    font-size: clamp(2.5rem, 7vw, 4rem); /* un poco más grande y flexible */
+    color: #1E3A8A; /* Azul zafiro profundo y sofisticado */
     letter-spacing: 2px;
-    text-shadow: 0 0 18px #00e5ffaa, 0 0 8px #00bfff99, 0 0 26px #004466;
+    font-weight: 700;
+    text-shadow:
+        0 0 10px rgba(30, 58, 138, 0.6),   /* halo azul elegante */
+        0 0 18px rgba(59, 130, 246, 0.5),  /* resplandor azul real */
+        0 0 28px rgba(0, 0, 0, 0.85);      /* sombra profunda */
 }
+
 
 /* =================== NAV =================== */
 nav {
@@ -44,19 +54,20 @@ nav a {
     padding: 0.7rem 1.2rem;
     border-radius: 14px;
     background: linear-gradient(160deg, #111111, #000000);
-    border: 2px solid #00bfff;
+    border: 2px solid #1E3A8A; /* zafiro */
     color: #e5e5e5;
     text-decoration: none;
     font-weight: bold;
-    box-shadow: 0 0 10px #00bfff88 inset, 0 0 12px #00e5ff44, 0 0 18px #000000cc;
+    box-shadow: 0 0 10px #1E3A8A55 inset, 0 0 12px #3B82F644;
     transition: all 0.3s ease;
 }
 nav a:hover {
     transform: scale(1.07);
-    box-shadow: 0 0 20px #00e5ffcc, 0 0 14px #00bfff99 inset, 0 0 28px #001a33;
-    border-color: #64e6ff;
+    border-color: #3B82F6; /* azul brillante menos chillón */
     color: #ffffff;
+    box-shadow: 0 0 18px #3B82F6bb, 0 0 14px #1E3A8A99 inset;
 }
+
 
 /* =================== SECCIONES =================== */
 section {
@@ -69,21 +80,17 @@ section {
 
 /* =================== CARDS =================== */
 a.card {
-    display: block;
-    text-decoration: none;
-    color: inherit;
     background: linear-gradient(160deg, #0d0d0d, #000000);
-    padding: 1.2rem;
     border-radius: 18px;
-    box-shadow: 0 0 16px #00bfff66, 0 0 10px #00e5ff55 inset;
+    padding: 1.2rem;
+    box-shadow: 0 0 16px #1E3A8A66, 0 0 10px #3B82F655 inset;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 a.card:hover {
     transform: scale(1.06);
-    box-shadow: 0 0 26px #00e5ffbb, 0 0 18px #00bfff99 inset;
+    box-shadow: 0 0 26px #64e6ffbb, 0 0 18px #1E3A8A99 inset;
 }
-
 /* =================== GRIDS =================== */
 .ticket-grid, .ventas-grid {
     display: grid;
@@ -101,16 +108,16 @@ a.card:hover {
 }
 .ticket-card:hover, .venta-card:hover {
     transform: scale(1.04);
-    box-shadow: 0 0 26px #00e5ff88, 0 0 18px #00bfff66 inset;
+    box-shadow: 0 0 22px #3B82F6aa, 0 0 16px #1E3A8A88 inset;
 }
 
 /* =================== ETIQUETAS =================== */
 .etiqueta-label {
     font-weight: bold;
     font-size: 1rem;
-    color: #64e6ff;
+    color: #3B82F6; /* azul real sobrio */
     margin-bottom: 0.4rem;
-    text-shadow: 0 0 8px #00e5ff66, 0 0 12px #001a33;
+    text-shadow: 0 0 3px #1E3A8A44;
 }
 
 .etiqueta-valor {
@@ -121,8 +128,8 @@ a.card:hover {
 .etiqueta-valor.monto {
     font-size: 1.15rem;
     font-weight: 700;
-    color: #00e5ff;
-    text-shadow: 0 0 8px #00e5ff77;
+    color: #64e6ff; /* mantiene el cian para dinero */
+    text-shadow: 0 0 4px #64e6ff55;
 }
 .etiqueta-valor.tipo {
     font-weight: bold;
@@ -165,4 +172,26 @@ footer {
     nav a { font-size: 0.85rem; padding: 0.5rem 0.9rem; }
     section { grid-template-columns: 1fr; }
 }
+
+/* ===== ESTILO GLOBAL PARA ENLACES ===== */
+a {
+    color: inherit;            /* toma el color del contenedor */
+    text-decoration: none;     /* elimina subrayado */
+    font-weight: 500;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #64e6ff;            /* cian suave para resaltar al pasar mouse */
+    text-shadow: 0 0 4px #64e6ff55;
+}
+
+a:visited {
+    color: inherit;            /* mantiene color del contenedor */
+}
+
+a:active {
+    color: #3B82F6;            /* azul elegante al hacer click */
+}
+
 
