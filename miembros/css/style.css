@@ -214,11 +214,74 @@ a:active {
 }
 
 
+
 /* =================== RESPONSIVE =================== */
 @media (max-width: 480px) {
-    body { padding: 1.2rem; }
-    nav a { font-size: 0.85rem; padding: 0.5rem 0.9rem; }
-    section { grid-template-columns: 1fr; }
+    body {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    nav a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.7rem;
+        border-radius: 6px;
+    }
+
+    /* Ajuste de bloques legend */
+    .legend-block {
+        padding: 1rem;
+        margin: 1rem 0;
+        font-size: 0.9rem;
+    }
+
+    /* Citas con glow más compactas */
+    .glow-quote {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    /* Scroll banner más pequeño */
+    .scroll-banner {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.7rem;
+        margin: 1rem 0;
+    }
+
+    /* Tablas responsive */
+    .epic-table {
+        font-size: 0.8rem;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .epic-table th, .epic-table td {
+        padding: 0.5rem;
+    }
+
+    /* Grids en 1 columna */
+    section {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+
+    /* Ajuste de tarjetas (tickets, ventas) */
+    .ticket-card, .venta-card {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
 }
 
 
