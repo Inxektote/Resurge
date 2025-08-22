@@ -171,7 +171,7 @@ a:active {
   background: rgba(0, 20, 40, 0.4);
   padding: 1.5rem;
   margin: 1.5rem 0;
-  border-left: 5px solid #00bbff;
+  
   box-shadow: 0 0 12px #0088ff33;
   border-radius: 8px;
 }
