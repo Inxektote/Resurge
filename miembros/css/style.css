@@ -213,6 +213,23 @@ a:active {
   background: rgba(0, 40, 60, 0.3);
 }
 
+/* Contenedor principal */
+.container {
+  max-width: 900px;   /* ancho de lectura cómodo */
+  margin: 0 auto;     /* centra horizontalmente */
+  padding: 1.5rem;    /* espacio interno uniforme */
+  box-sizing: border-box;
+}
+
+/* Header y Footer alineados */
+header, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+
 
 
 /* =================== RESPONSIVE =================== */
