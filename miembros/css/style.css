@@ -229,6 +229,50 @@ header, footer {
   text-align: center;
 }
 
+/* GRID de notificaciones */
+.notification-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Tarjeta de notificación */
+.notification-card {
+  background: rgba(30, 30, 40, 0.9);
+  border: 1px solid var(--accent);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(100, 230, 255, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.notification-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(100, 230, 255, 0.3);
+}
+
+/* Texto y fecha */
+.notificacion-texto {
+  font-size: 1.1rem;
+  color: #f5f5f5;
+  margin-bottom: 0.5rem;
+}
+
+.notificacion-fecha {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Estado vacío */
+.notification-card.empty {
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
+}
+
+
 
 
 
