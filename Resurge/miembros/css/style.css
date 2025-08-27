@@ -1,0 +1,360 @@
+
+/* =================== BASE GLOBAL =================== */
+body {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    background: linear-gradient(145deg, #0a0f1a, #101728, #0a0f1a);
+    color: #e5e5e5;
+    text-shadow: none;
+}
+
+/* =================== TITULOS =================== */
+h1, h2, h3 {
+    color: #2563eb; /* Azul más claro y elegante que el zafiro profundo */
+    margin: 0.5rem 0;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    text-shadow:
+        0 0 8px rgba(37, 99, 235, 0.55),
+        0 0 16px rgba(96, 165, 250, 0.4);
+}
+
+/* =================== HEADER =================== */
+header {
+    background: linear-gradient(120deg, #0a0f1a, #101728, #0a0f1a);
+    padding: 2.5rem;
+    text-align: center;
+    border-bottom: 3px solid #2563eb;
+    box-shadow: 0 0 25px #000 inset, 0 0 22px #2563eb55 inset;
+}
+header h1 {
+    font-size: clamp(2.5rem, 7vw, 4rem);
+    color: #3B82F6; /* un poco más claro para brillar */
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow:
+        0 0 12px rgba(59, 130, 246, 0.7),
+        0 0 22px rgba(96, 165, 250, 0.5),
+        0 0 30px rgba(0, 0, 0, 0.85);
+}
+
+/* =================== NAV =================== */
+nav {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+}
+nav a {
+    display: inline-block;
+    padding: 0.7rem 1.2rem;
+    border-radius: 14px;
+    background: linear-gradient(160deg, #111421, #101728);
+    border: 2px solid #2563eb;
+    color: #e5e5e5;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 12px #2563eb55 inset, 0 0 14px #3B82F644;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    transform: scale(1.07);
+    border-color: #3B82F6;
+    color: #ffffff;
+    box-shadow: 0 0 20px #3B82F6bb, 0 0 16px #1E3A8A99 inset;
+}
+
+/* =================== SECCIONES =================== */
+section {
+    padding: 2.2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.4rem;
+    border-top: 2px solid #1e293b;
+}
+
+/* =================== CARDS =================== */
+a.card {
+    background: linear-gradient(160deg, #111421, #101728);
+    border-radius: 18px;
+    padding: 1.2rem;
+    box-shadow: 0 0 18px #2563eb66, 0 0 12px #3B82F655 inset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+a.card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 28px #60a5fabb, 0 0 20px #2563eb99 inset;
+}
+
+/* =================== GRIDS =================== */
+.ticket-grid, .ventas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.2rem;
+    padding: 1.2rem 0;
+}
+
+.ticket-card, .venta-card, .ticket-note {
+    background: linear-gradient(135deg, #111421, #101728);
+    border-radius: 18px;
+    padding: 1.2rem 1.4rem;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.5), 0 0 16px #2563eb55 inset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ticket-card:hover, .venta-card:hover, .ticket-note:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 26px #3B82F6aa, 0 0 20px #2563eb88 inset;
+}
+
+/* =================== ETIQUETAS =================== */
+.etiqueta-label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #3B82F6;
+    margin-bottom: 0.4rem;
+    text-shadow: 0 0 4px #2563eb66;
+}
+
+.etiqueta-valor {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+    color: #e2e8f0;
+}
+.etiqueta-valor.monto {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #64e6ff;
+    text-shadow: 0 0 6px #64e6ff55;
+}
+.etiqueta-valor.tipo {
+    font-weight: bold;
+    color: #38bdf8;
+}
+.etiqueta-valor.alerta {
+    color: #facc15;
+    text-shadow: 0 0 10px #facc1544;
+}
+
+/* =================== FOOTER =================== */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #94a3b8;
+    border-top: 2px solid #1a1a1a;
+    margin-top: 2.5rem;
+    background: linear-gradient(135deg, #0a0f1a, #101728, #0a0f1a);
+    box-shadow: 0 0 18px #3B82F655 inset, 0 0 24px #001a33;
+}
+
+/* =================== ENLACES =================== */
+a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+a:hover {
+    color: #64e6ff;
+    text-shadow: 0 0 6px #64e6ff55;
+}
+a:visited {
+    color: inherit;
+}
+a:active {
+    color: #3B82F6;
+}
+
+.legend-block {
+  background: rgba(0, 20, 40, 0.4);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  
+  box-shadow: 0 0 12px #0088ff33;
+  border-radius: 8px;
+}
+.glow-quote {
+  text-align: center;
+  font-style: italic;
+  font-family: 'Cinzel', serif;
+  margin: 2rem 0 1rem 0;
+  color: #a3e7ff;
+  text-shadow: 0 0 15px #00eaff;
+}
+.scroll-banner {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 12px;
+  background: linear-gradient(to right, #0050a0cc, #00bbffcc);
+  color: #ffffff;
+  font-weight: bold;
+  margin: 2rem 0 1rem 0;
+  box-shadow: 0 0 12px #00bfff77;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 1px;
+}
+.epic-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+.epic-table th, .epic-table td {
+  border: 1px solid #00aaff44;
+  padding: 0.8rem;
+  text-align: left;
+}
+.epic-table th {
+  background: #001f33;
+  color: #88eaff;
+}
+.epic-table tr:nth-child(even) {
+  background: rgba(0, 40, 60, 0.3);
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 900px;   /* ancho de lectura cómodo */
+  margin: 0 auto;     /* centra horizontalmente */
+  padding: 1.5rem;    /* espacio interno uniforme */
+  box-sizing: border-box;
+}
+
+/* Header y Footer alineados */
+header, footer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* GRID de notificaciones */
+.notification-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Tarjeta de notificación */
+.notification-card {
+  background: rgba(30, 30, 40, 0.9);
+  border: 1px solid var(--accent);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(100, 230, 255, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.notification-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px rgba(100, 230, 255, 0.3);
+}
+
+/* Texto y fecha */
+.notificacion-texto {
+  font-size: 1.1rem;
+  color: #f5f5f5;
+  margin-bottom: 0.5rem;
+}
+
+.notificacion-fecha {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Estado vacío */
+.notification-card.empty {
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
+}
+
+.logo {
+    width: 80px;       /* tamaño del logo */
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+
+/* =================== RESPONSIVE =================== */
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    nav a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.7rem;
+        border-radius: 6px;
+    }
+
+    /* Ajuste de bloques legend */
+    .legend-block {
+        padding: 1rem;
+        margin: 1rem 0;
+        font-size: 0.9rem;
+    }
+
+    /* Citas con glow más compactas */
+    .glow-quote {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    /* Scroll banner más pequeño */
+    .scroll-banner {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.7rem;
+        margin: 1rem 0;
+    }
+
+    /* Tablas responsive */
+    .epic-table {
+        font-size: 0.8rem;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .epic-table th, .epic-table td {
+        padding: 0.5rem;
+    }
+
+    /* Grids en 1 columna */
+    section {
+        display: grid;
+        grid-template-columns: 1fr !important;
+        gap: 1rem;
+    }
+
+    /* Ajuste de tarjetas (tickets, ventas) */
+    .ticket-card, .venta-card {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+
